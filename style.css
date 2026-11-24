@@ -6,11 +6,12 @@
 
 body {
     margin: 0 auto;
-    width: 55vw;
+    width: 55rem;
+    min-width: 3vw;
     margin-top: 3vw;
 
     font-size: clamp(1rem, 0.75rem + 0.5vw, 1.25rem);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Barlow Semi Condensed", "Barlow", "Arial Narrow", Arial, system-ui, sans-serif;
 
     background-color: #f3f5f7;
 }
@@ -18,8 +19,8 @@ body {
 
 .PortfolioIMG {
     display: block;
-    width: 100%;
-    max-width: 10vw;
+    width: 65%;
+    /* max-width: 10vw; */
     height: auto;
     margin-top: 1rem;
     margin-bottom: 0;
@@ -56,11 +57,6 @@ body {
     padding: 2rem;
 }
 
-.accolades ul {
-    margin-left: -2.5rem;
-}
-
-
 .Skills p {
     background-color: rgb(187, 199, 214);
     border: 2px solid rgb(154, 164, 177);
@@ -72,4 +68,11 @@ body {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        background-color: red;
+        width: 95vw;
+    }
 }
