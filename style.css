@@ -1,12 +1,12 @@
 :root {
-    --sidebar-width: 33%;
+    --sidebar-width: 30%;
 }
 
 
 
 body {
     margin: 0 auto;
-    width: 55rem;
+    width: 100vw;
     min-width: 3vw;
     margin-top: 3vw;
 
@@ -45,16 +45,17 @@ body {
 }
 
 .sidebar {
-    padding-right: 2rem;
-}
-
-.accolades {
     background-color: rgb(225, 238, 255);
     flex-direction: column;
     align-items: stretch;
     border: 1px rgb(175, 186, 201) solid;
 
+
     padding: 2rem;
+}
+
+.accolades {
+    padding-left: 2rem;
 }
 
 .Skills p {
@@ -72,7 +73,7 @@ body {
 
 @media screen and (max-width: 650px) {
     body {
-        background-color: red;
+        background-color: rgb(222, 236, 236);
         width: 95vw;
     }
 }
